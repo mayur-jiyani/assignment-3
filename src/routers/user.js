@@ -1,16 +1,51 @@
 const express = require("express");
 const User = require("../model/users");
 const router = new express.Router();
+const client = require("../db/redis");
 
-router.post("/users", async (req, res) => {
-  const user = new User(req.body);
+router.post("/authentication/users", async (req, res) => {
+  const user = await new User(req.body);
 
   try {
+    if (!(user.password.length >= 6 && user.password.length <= 12)) {
+      return res.send("password should be between 6 to 12 characters long");
+    }
+
     await user.save();
 
     const token = await user.generatAuthToken();
-    res.status(201).send({ user, token });
+
+    // const response = await client.set(user.usrename, token);
+
+    // res.status(201).send({ username: user.username, token });
+
+    await client.json.set(user.usrename, ".", {
+      name: "Roberta McDonald",
+      address: {
+        number: 99,
+        street: "Main Street",
+        city: "Springfield",
+        state: "OH",
+        country: "USA",
+      },
+    });
+
+    res.send(response);
   } catch (e) {
-    res.status(400).send(e);
+    res.status(400).send(e.toString());
   }
 });
+
+router.get("/authentication/users", async (req, res) => {
+  const user = await new User(req.body);
+
+  try {
+    const response = await client.get(user.usrename);
+
+    res.send(response);
+  } catch (e) {
+    res.status(400).send(e.toString());
+  }
+});
+
+module.exports = router;

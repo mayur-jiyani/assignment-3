@@ -12,9 +12,15 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@node-redis/json": "^1.0.2",
+    "bcryptjs": "^2.4.3",
     "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
     "moment": "^2.29.1",
-    "mongoose": "^6.2.0"
+    "mongoose": "^6.2.0",
+    "redis": "^4.0.3",
+    "redis-rejson": "^1.0.0",
+    "validator": "^13.7.0"
   },
   "devDependencies": {
     "env-cmd": "^10.1.0",
