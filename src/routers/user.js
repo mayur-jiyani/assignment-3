@@ -11,7 +11,10 @@ router.post("/authentication/users", async (req, res) => {
       return res.send("password should be between 6 to 12 characters long");
     }
 
-    await user.save();
+    const dbUser = await user.save();
+    const userKey = 'user_' + dbUser.username
+
+    const response = await client.json.set(userKey, '.', { id: dbUser._id, username: dbUser.username, password: dbUser.password });
 
     const token = await user.generatAuthToken();
 
@@ -19,16 +22,16 @@ router.post("/authentication/users", async (req, res) => {
 
     // res.status(201).send({ username: user.username, token });
 
-    await client.json.set(user.usrename, ".", {
-      name: "Roberta McDonald",
-      address: {
-        number: 99,
-        street: "Main Street",
-        city: "Springfield",
-        state: "OH",
-        country: "USA",
-      },
-    });
+    // await client.json.set(user.usrename, ".", {
+    //   name: "Roberta McDonald",
+    //   address: {
+    //     number: 99,
+    //     street: "Main Street",
+    //     city: "Springfield",
+    //     state: "OH",
+    //     country: "USA",
+    //   },
+    // });
 
     res.send(response);
   } catch (e) {
