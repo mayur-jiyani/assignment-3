@@ -2,6 +2,8 @@ const express = require("express");
 const User = require("../model/users");
 const router = new express.Router();
 const client = require("../db/redis");
+const auth = require("../middleware/auth");
+const amqp = require("amqplib");
 
 router.post("/authentication/users", async (req, res) => {
   const user = await new User(req.body);
@@ -11,76 +13,49 @@ router.post("/authentication/users", async (req, res) => {
       return res.send("password should be between 6 to 12 characters long");
     }
 
-<<<<<<< HEAD
-    await user.save();
-=======
     const dbUser = await user.save();
-    const userKey = 'user_' + dbUser.username
 
-    const response = await client.json.set(userKey, '.', { id: dbUser._id, username: dbUser.username, password: dbUser.password });
->>>>>>> master
+    const userKey = "user_" + dbUser.username;
+
+    await client.json.set(userKey, ".", {
+      id: dbUser._id,
+      username: dbUser.username,
+      password: dbUser.password,
+    });
 
     const token = await user.generatAuthToken();
 
-    // const response = await client.set(user.usrename, token);
+    return res.status(201).send({ user, token });
+  } catch (e) {
+    return res.status(400).send(e.toString());
+  }
+});
 
-    // res.status(201).send({ username: user.username, token });
+router.post("/authentication/users/login", async (req, res) => {
+  try {
+    const user = await User.findByCredentials(
+      req.body.username,
+      req.body.password
+    );
 
-<<<<<<< HEAD
-    await client.json.set(user.usrename, ".", {
-      name: "Roberta McDonald",
-      address: {
-        number: 99,
-        street: "Main Street",
-        city: "Springfield",
-        state: "OH",
-        country: "USA",
-      },
+    const token = await user.generatAuthToken();
+    return res.status(200).send({ user, token });
+  } catch (e) {
+    return res.status(400).send(e.toString());
+  }
+});
+
+router.post("/authentication/users/logout", auth, async (req, res) => {
+  try {
+    req.user.tokens = req.user.tokens.filter((token) => {
+      return token.token !== req.token;
     });
-=======
-    // await client.json.set(user.usrename, ".", {
-    //   name: "Roberta McDonald",
-    //   address: {
-    //     number: 99,
-    //     street: "Main Street",
-    //     city: "Springfield",
-    //     state: "OH",
-    //     country: "USA",
-    //   },
-    // });
+    await req.user.save();
 
-    res.send(response);
+    return res.send("successfulluy logout");
   } catch (e) {
-    res.status(400).send(e.toString());
+    return res.status(500).send();
   }
 });
 
-router.get("/authentication/users", async (req, res) => {
-  const user = await new User(req.body);
-
-  try {
-    const response = await client.get(user.usrename);
->>>>>>> master
-
-    res.send(response);
-  } catch (e) {
-    res.status(400).send(e.toString());
-  }
-});
-
-<<<<<<< HEAD
-router.get("/authentication/users", async (req, res) => {
-  const user = await new User(req.body);
-
-  try {
-    const response = await client.get(user.usrename);
-
-    res.send(response);
-  } catch (e) {
-    res.status(400).send(e.toString());
-  }
-});
-
-=======
->>>>>>> master
 module.exports = router;

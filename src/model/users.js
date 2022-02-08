@@ -1,7 +1,8 @@
 const mongoose = require("mongoose");
-const validator = require("validator");
+// const validator = require("validator");
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const client = require("../db/redis");
 
 const userSchema = new mongoose.Schema({
   username: {
@@ -34,6 +35,12 @@ const userSchema = new mongoose.Schema({
   ],
 });
 
+userSchema.virtual("messages", {
+  ref: "Message",
+  localField: "_id",
+  foreignField: "user_id",
+});
+
 userSchema.methods.generatAuthToken = async function () {
   const user = this;
   const token = jwt.sign({ _id: user._id.toString() }, process.env.JWT_SECRET);
@@ -42,6 +49,25 @@ userSchema.methods.generatAuthToken = async function () {
   await user.save();
 
   return token;
+};
+
+userSchema.statics.findByCredentials = async (username, password) => {
+  const userKey = "user_" + username;
+  const redisUser = await client.json.get(userKey);
+
+  if (!redisUser) {
+    throw new Error("Unable to login");
+  }
+
+  const isMatch = await bcrypt.compare(password, redisUser.password);
+
+  if (!isMatch) {
+    throw new Error("Unable to login");
+  }
+
+  const user = await User.findById(redisUser.id);
+
+  return user;
 };
 
 userSchema.pre("save", async function (next) {

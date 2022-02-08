@@ -7,6 +7,7 @@ const messageSchema = new mongoose.Schema({
     trim: true,
     required: true,
   },
+
   request_count: {
     type: Number,
     default: 0,
@@ -19,6 +20,11 @@ const messageSchema = new mongoose.Schema({
   created_time: {
     type: Date,
     default: moment(new Date()).format("YYYY-MM-DD HH:mm:ss"),
+  },
+  user_id: {
+    type: mongoose.Schema.Types.ObjectId,
+    required: true,
+    ref: "User",
   },
 });
 
