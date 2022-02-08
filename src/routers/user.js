@@ -11,7 +11,14 @@ router.post("/authentication/users", async (req, res) => {
       return res.send("password should be between 6 to 12 characters long");
     }
 
+<<<<<<< HEAD
     await user.save();
+=======
+    const dbUser = await user.save();
+    const userKey = 'user_' + dbUser.username
+
+    const response = await client.json.set(userKey, '.', { id: dbUser._id, username: dbUser.username, password: dbUser.password });
+>>>>>>> master
 
     const token = await user.generatAuthToken();
 
@@ -19,6 +26,7 @@ router.post("/authentication/users", async (req, res) => {
 
     // res.status(201).send({ username: user.username, token });
 
+<<<<<<< HEAD
     await client.json.set(user.usrename, ".", {
       name: "Roberta McDonald",
       address: {
@@ -29,6 +37,17 @@ router.post("/authentication/users", async (req, res) => {
         country: "USA",
       },
     });
+=======
+    // await client.json.set(user.usrename, ".", {
+    //   name: "Roberta McDonald",
+    //   address: {
+    //     number: 99,
+    //     street: "Main Street",
+    //     city: "Springfield",
+    //     state: "OH",
+    //     country: "USA",
+    //   },
+    // });
 
     res.send(response);
   } catch (e) {
@@ -41,6 +60,7 @@ router.get("/authentication/users", async (req, res) => {
 
   try {
     const response = await client.get(user.usrename);
+>>>>>>> master
 
     res.send(response);
   } catch (e) {
@@ -48,4 +68,19 @@ router.get("/authentication/users", async (req, res) => {
   }
 });
 
+<<<<<<< HEAD
+router.get("/authentication/users", async (req, res) => {
+  const user = await new User(req.body);
+
+  try {
+    const response = await client.get(user.usrename);
+
+    res.send(response);
+  } catch (e) {
+    res.status(400).send(e.toString());
+  }
+});
+
+=======
+>>>>>>> master
 module.exports = router;
