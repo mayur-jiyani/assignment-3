@@ -67,7 +67,7 @@ userSchema.statics.findByCredentials = async (username, password) => {
 
   const user = await User.findById(redisUser.id);
 
-  return user;
+  return { redisUser, user };
 };
 
 userSchema.pre("save", async function (next) {
