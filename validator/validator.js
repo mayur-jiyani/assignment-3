@@ -1,10 +1,10 @@
 const express = require("express");
 const router = new express.Router();
-const auth = require("../middleware/auth");
+const auth = require("../src/middleware/auth");
 const amqp = require("amqplib");
-const Message = require("../model/messages");
+const Message = require("../src/model/messages");
 const axios = require("axios");
-const User = require("../model/users");
+const User = require("../src/model/users");
 const { v4: uuidv4 } = require("uuid");
 
 router.get("/validator/consumer", auth, async (req, res) => {
@@ -31,11 +31,11 @@ router.get("/validator/consumer", auth, async (req, res) => {
         //set options for axios
         const options = {
           method: "POST",
-          url: "http://127.0.0.1:3001/tracker/messages",
+          url: "http://127.0.0.1:3003/tracker/messages",
           data: [trackerdata],
           headers: {
             Authorization: `Bearer ${token}`,
-            // correlation_id: uuidv4(),
+            correlation_id: uuidv4(),
           },
         };
 

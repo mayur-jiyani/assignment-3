@@ -10,9 +10,8 @@ router.post("/tracker/messages", auth, (req, res) => {
     const message = new Message({
       ...item,
       user_id: req.user._id,
+      request_id: req.header("correlation_id"),
     });
-    // request_id = req.query.correlation_id;
-    // console.log(request_id);
 
     try {
       await message.save();

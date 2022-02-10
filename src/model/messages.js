@@ -1,5 +1,6 @@
 const mongoose = require("mongoose");
 const moment = require("moment");
+const { v4: uuidv4 } = require("uuid");
 
 const messageSchema = new mongoose.Schema({
   user_message: {
@@ -20,6 +21,10 @@ const messageSchema = new mongoose.Schema({
     type: mongoose.Schema.Types.ObjectId,
     required: true,
     ref: "User",
+  },
+  request_id: {
+    type: String,
+    required: true,
   },
 });
 
