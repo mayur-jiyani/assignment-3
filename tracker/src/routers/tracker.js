@@ -1,7 +1,7 @@
 const express = require("express");
-const Message = require("../src/model/messages");
+const Message = require("../model/messages");
 const router = new express.Router();
-const auth = require("../src/middleware/auth");
+const auth = require("../middleware/auth");
 
 router.post("/tracker/messages", auth, (req, res) => {
   const arr = req.body;
@@ -54,12 +54,26 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
   }
 
   try {
-    const count = await Message.countDocuments({
-      category: req.body.category,
-      created_time: req.body.created_time,
-    });
+    const category = req.body.category;
+    const date = req.body.created_time;
+    const fromDate = new Date(date);
+    const toDate = new Date(fromDate.getTime() + 86400000);
+    if (!category || !date) {
+      return res.send({ message: "category and date required.", ok: false });
+    }
 
-    return res.status(200).send({ "number of messages": count });
+    const message = await Message.find({
+      category: category,
+      created_time: { $gte: fromDate, $lt: toDate },
+    }).count();
+    if (message == 0) {
+      return res.send({
+        message: "no data with this category and date",
+        ok: true,
+      });
+    }
+    // console.log("message: ", message)
+    res.send({ message: message, ok: true });
   } catch (e) {
     return res.status(500).send({ error: "no record found" });
   }

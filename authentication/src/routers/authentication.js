@@ -1,8 +1,8 @@
 const express = require("express");
-const User = require("../src/model/users");
+const User = require("../model/users");
 const router = new express.Router();
-const client = require("../src/db/redis");
-const auth = require("../src/middleware/auth");
+const client = require("../db/redis");
+const auth = require("../middleware/auth");
 
 router.post("/authentication/users", async (req, res) => {
   const user = await new User(req.body);
@@ -24,7 +24,6 @@ router.post("/authentication/users", async (req, res) => {
     });
 
     const token = await user.generatAuthToken();
-
     return res.status(201).send({ user, token });
   } catch (e) {
     return res.status(400).send(e.toString());
@@ -47,14 +46,9 @@ router.post("/authentication/users/login", async (req, res) => {
 
 router.post("/authentication/users/logout", auth, async (req, res) => {
   try {
-    req.user.tokens = req.user.tokens.filter((token) => {
-      return token.token !== req.token;
-    });
-    await req.user.save();
-
     return res.send("successfulluy logout");
   } catch (e) {
-    return res.status(500).send();
+    return res.status(500).send(e.toString());
   }
 });
 

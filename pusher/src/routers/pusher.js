@@ -1,8 +1,8 @@
 const express = require("express");
 const router = new express.Router();
-const auth = require("../src/middleware/auth");
+const auth = require("../middleware/auth");
 const amqp = require("amqplib");
-const client = require("../src/db/redis");
+const client = require("../db/redis");
 
 router.post("/pusher/publisher", auth, async (req, res) => {
   try {
@@ -17,14 +17,16 @@ router.post("/pusher/publisher", auth, async (req, res) => {
     var QUEUE = "qweq";
     await channel.assertQueue(QUEUE);
 
-    const randomNumber = Math.floor(Math.random() * 60 + 1);
-    const msg = {
-      message: req.body.msg,
-      randomNumber: randomNumber,
-      user_id: req.user._id,
-    };
-
-    await channel.sendToQueue(QUEUE, Buffer.from(JSON.stringify(msg)));
+    const arr = req.body;
+    arr.forEach(async (item) => {
+      const msg = {
+        message: item.message,
+        randomNumber: Math.floor(Math.random() * 60 + 1),
+        user_id: req.user._id,
+        token: req.token,
+      };
+      await channel.sendToQueue(QUEUE, Buffer.from(JSON.stringify(msg)));
+    });
 
     await channel.close();
     await connection.close();
