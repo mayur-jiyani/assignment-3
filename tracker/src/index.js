@@ -1,10 +1,7 @@
 const app = require("./app");
 const port = process.env.TRACK_PORT;
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
+const logger = require("./logger");
 
 app.listen(port, () => {
-  console.log("server is up on port" + port);
+  logger.info("server is up on port" + port);
 });

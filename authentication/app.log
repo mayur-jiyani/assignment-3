@@ -1,0 +1,13 @@
+2022-02-14T07:09:56.503Z - [INFO   ] - server is up on port3002
+2022-02-14T07:16:00.387Z - [INFO   ] - server is up on port3002
+2022-02-14T07:16:22.667Z - [WARN   ] - password should be between 6 to 12 characters long
+2022-02-14T07:17:57.010Z - [INFO   ] - server is up on port3002
+2022-02-14T07:17:58.486Z - [ERROR  ] - user not found
+2022-02-14T07:17:58.486Z - [ERROR  ] - Please authenticate
+2022-02-14T07:26:44.740Z - [INFO   ] - server is up on port3002
+2022-02-14T07:26:46.727Z - [ERROR  ] - user not found
+2022-02-14T07:26:46.729Z - [ERROR  ] - Please authenticate
+2022-02-14T08:46:32.159Z - [ERROR  ] - TypeError: Cannot read properties of null (reading 'generatAuthToken')
+2022-02-14T08:46:45.766Z - [INFO   ] - server is up on port3002
+2022-02-14T08:46:58.391Z - [ERROR  ] - TypeError: Cannot read properties of null (reading 'generatAuthToken')
+2022-02-14T12:03:46.379Z - [ERROR  ] - TypeError: Cannot read properties of null (reading 'generatAuthToken')

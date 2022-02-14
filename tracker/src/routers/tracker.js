@@ -2,6 +2,7 @@ const express = require("express");
 const Message = require("../model/messages");
 const router = new express.Router();
 const auth = require("../middleware/auth");
+const logger = require("../logger");
 
 router.post("/tracker/messages", auth, (req, res) => {
   const arr = req.body;
@@ -17,6 +18,7 @@ router.post("/tracker/messages", auth, (req, res) => {
       await message.save();
       // const token = await message.generatAuthToken();
     } catch (e) {
+      logger.error(e.toString());
       return res.status(400).send(e);
     }
   });
@@ -38,6 +40,7 @@ router.get("/tracker/messages", auth, async (req, res) => {
 
     return res.status(200).send(result);
   } catch (e) {
+    logger.error(e.toString());
     return res.status(500).send();
   }
 });
@@ -50,6 +53,7 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
   );
 
   if (!isValidOperation) {
+    logger.warn("Invalid keys!");
     return res.status(400).send({ error: "Invalid keys!" });
   }
 
@@ -59,6 +63,7 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
     const fromDate = new Date(date);
     const toDate = new Date(fromDate.getTime() + 86400000);
     if (!category || !date) {
+      logger.warn("category and date required.");
       return res.send({ message: "category and date required.", ok: false });
     }
 
@@ -67,6 +72,7 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
       created_time: { $gte: fromDate, $lt: toDate },
     }).count();
     if (message == 0) {
+      logger.error("no data with this category and date");
       return res.send({
         message: "no data with this category and date",
         ok: true,
@@ -75,6 +81,7 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
     // console.log("message: ", message)
     res.send({ message: message, ok: true });
   } catch (e) {
+    logger.error("no data with this category and date");
     return res.status(500).send({ error: "no record found" });
   }
 });

@@ -1,0 +1,29 @@
+2022-02-14T07:23:08.534Z - [INFO   ] - server is up on port3004
+2022-02-14T07:26:02.351Z - [INFO   ] - server is up on port3004
+2022-02-14T07:26:56.272Z - [ERROR  ] - Please authenticate
+2022-02-14T08:44:31.162Z - [INFO   ] - server is up on port3004
+2022-02-14T08:45:03.612Z - [INFO   ] - server is up on port3004
+2022-02-14T08:58:43.438Z - [INFO   ] - server is up on port3004
+2022-02-14T09:07:54.858Z - [INFO   ] - server is up on port3004
+2022-02-14T09:43:54.752Z - [INFO   ] - server is up on port3004
+2022-02-14T09:56:50.354Z - [INFO   ] - server is up on port3004
+2022-02-14T10:06:04.458Z - [INFO   ] - server is up on port3004
+2022-02-14T12:03:24.566Z - [INFO   ] - server is up on port3004
+2022-02-14T12:03:37.385Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:03:50.262Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:04:59.972Z - [INFO   ] - server is up on port3004
+2022-02-14T12:08:11.307Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:08:49.781Z - [INFO   ] - server is up on port3004
+2022-02-14T12:08:50.058Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:10:24.057Z - [INFO   ] - server is up on port3004
+2022-02-14T12:10:56.902Z - [INFO   ] - server is up on port3004
+2022-02-14T12:11:15.261Z - [INFO   ] - server is up on port3004
+2022-02-14T12:11:26.391Z - [INFO   ] - server is up on port3004
+2022-02-14T12:32:00.550Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:32:11.532Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-14T12:33:54.301Z - [ERROR  ] - user not found
+2022-02-14T12:33:54.303Z - [ERROR  ] - Please authenticate
+2022-02-14T12:34:14.963Z - [ERROR  ] - user not found
+2022-02-14T12:34:14.966Z - [ERROR  ] - Please authenticate
+2022-02-14T12:34:30.773Z - [INFO   ] - server is up on port3004
+2022-02-14T12:34:40.778Z - [INFO   ] - server is up on port3004

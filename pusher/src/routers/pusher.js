@@ -3,6 +3,7 @@ const router = new express.Router();
 const auth = require("../middleware/auth");
 const amqp = require("amqplib");
 const client = require("../db/redis");
+const logger = require("../logger");
 
 router.post("/pusher/publisher", auth, async (req, res) => {
   try {
@@ -32,6 +33,7 @@ router.post("/pusher/publisher", auth, async (req, res) => {
     await connection.close();
     return res.status(200).send("sent successfully");
   } catch (ex) {
+    logger.error(ex.toString());
     res.status(500).send(ex);
   }
 });

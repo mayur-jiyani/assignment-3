@@ -7,6 +7,7 @@ const axios = require("axios");
 const User = require("../model/users");
 const { v4: uuidv4 } = require("uuid");
 const PromiseTimers = require("promise-timers");
+const logger = require("../logger");
 
 router.get("/validator/consumer", auth, async (req, res) => {
   try {
@@ -92,8 +93,9 @@ router.get("/validator/consumer", auth, async (req, res) => {
       { noAck: true }
     );
 
-    console.log("Waiting for messages...");
+    logger.info("Waiting for messages...");
   } catch (ex) {
+    logger.error(ex.toString());
     res.status(500).send(ex);
   }
 });
