@@ -27,3 +27,254 @@
 2022-02-14T12:34:14.966Z - [ERROR  ] - Please authenticate
 2022-02-14T12:34:30.773Z - [INFO   ] - server is up on port3004
 2022-02-14T12:34:40.778Z - [INFO   ] - server is up on port3004
+2022-02-15T03:50:01.848Z - [INFO   ] - server is up on port3004
+2022-02-15T04:55:09.322Z - [INFO   ] - server is up on port3004
+2022-02-15T04:58:01.977Z - [INFO   ] - server is up on port3004
+2022-02-15T05:21:53.534Z - [INFO   ] - server is up on port3004
+2022-02-15T05:22:59.407Z - [ERROR  ] - axios is not defined
+2022-02-15T05:24:38.190Z - [INFO   ] - server is up on port3004
+2022-02-15T05:24:42.628Z - [ERROR  ] - axios is not defined
+2022-02-15T05:25:35.749Z - [INFO   ] - server is up on port3004
+2022-02-15T05:25:38.635Z - [ERROR  ] - axios is not defined
+2022-02-15T05:26:31.063Z - [INFO   ] - server is up on port3004
+2022-02-15T05:26:34.486Z - [ERROR  ] - axios is not defined
+2022-02-15T05:26:53.831Z - [INFO   ] - server is up on port3004
+2022-02-15T05:26:57.498Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:26:57.536Z - [ERROR  ] - Please authenticate
+2022-02-15T05:32:16.555Z - [INFO   ] - server is up on port3004
+2022-02-15T05:32:22.456Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:32:22.482Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:32:48.474Z - [INFO   ] - server is up on port3004
+2022-02-15T05:32:51.268Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:32:51.281Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:33:14.040Z - [INFO   ] - server is up on port3004
+2022-02-15T05:33:17.371Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:33:17.390Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:38:16.568Z - [INFO   ] - server is up on port3004
+2022-02-15T05:38:20.385Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:38:20.399Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:40:22.086Z - [INFO   ] - server is up on port3004
+2022-02-15T05:40:25.787Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:40:25.803Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:43:13.531Z - [INFO   ] - server is up on port3004
+2022-02-15T05:43:16.823Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:43:16.836Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:45:20.488Z - [INFO   ] - server is up on port3004
+2022-02-15T05:45:52.137Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:45:52.154Z - [ERROR  ] - Request failed with status code 404
+2022-02-15T05:48:20.397Z - [INFO   ] - server is up on port3004
+2022-02-15T05:48:24.118Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:48:36.328Z - [INFO   ] - server is up on port3004
+2022-02-15T05:48:37.505Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:49:29.278Z - [INFO   ] - server is up on port3004
+2022-02-15T05:49:30.348Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:49:43.986Z - [INFO   ] - server is up on port3004
+2022-02-15T05:51:11.133Z - [INFO   ] - server is up on port3004
+2022-02-15T05:52:13.682Z - [INFO   ] - server is up on port3004
+2022-02-15T05:52:32.287Z - [INFO   ] - server is up on port3004
+2022-02-15T05:52:33.773Z - [ERROR  ] - req is not defined
+2022-02-15T05:53:25.729Z - [INFO   ] - server is up on port3004
+2022-02-15T05:53:36.782Z - [ERROR  ] - req is not defined
+2022-02-15T05:54:18.889Z - [INFO   ] - server is up on port3004
+2022-02-15T05:54:22.216Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:56:09.753Z - [INFO   ] - server is up on port3004
+2022-02-15T05:56:10.428Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:56:26.742Z - [INFO   ] - server is up on port3004
+2022-02-15T05:56:28.592Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:56:43.103Z - [INFO   ] - server is up on port3004
+2022-02-15T05:56:44.662Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T05:57:41.006Z - [ERROR  ] - socket hang up
+2022-02-15T06:02:58.265Z - [INFO   ] - server is up on port3004
+2022-02-15T06:05:17.003Z - [INFO   ] - server is up on port3004
+2022-02-15T06:05:29.692Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T06:05:53.044Z - [INFO   ] - server is up on port3004
+2022-02-15T06:05:53.766Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T06:14:21.983Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T06:20:00.811Z - [INFO   ] - server is up on port3004
+2022-02-15T06:20:05.244Z - [ERROR  ] - token is not defined
+2022-02-15T06:38:25.461Z - [ERROR  ] - socket hang up
+2022-02-15T06:59:28.634Z - [INFO   ] - server is up on port3004
+2022-02-15T07:00:07.967Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:01:02.763Z - [INFO   ] - server is up on port3004
+2022-02-15T07:01:20.516Z - [INFO   ] - server is up on port3004
+2022-02-15T07:01:21.855Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:04:18.239Z - [INFO   ] - server is up on port3004
+2022-02-15T07:04:20.196Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:04:32.790Z - [INFO   ] - server is up on port3004
+2022-02-15T07:04:57.957Z - [INFO   ] - server is up on port3004
+2022-02-15T07:04:59.916Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:06:19.858Z - [INFO   ] - server is up on port3004
+2022-02-15T07:06:25.560Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:10:47.444Z - [INFO   ] - server is up on port3004
+2022-02-15T07:10:48.444Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:12:51.451Z - [INFO   ] - server is up on port3004
+2022-02-15T07:12:53.784Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:13:33.376Z - [INFO   ] - server is up on port3004
+2022-02-15T07:13:35.062Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T07:16:02.671Z - [ERROR  ] - socket hang up
+2022-02-15T07:17:25.983Z - [INFO   ] - server is up on port3004
+2022-02-15T07:18:55.410Z - [INFO   ] - server is up on port3004
+2022-02-15T07:19:33.315Z - [INFO   ] - server is up on port3004
+2022-02-15T07:19:45.449Z - [INFO   ] - server is up on port3004
+2022-02-15T07:21:03.197Z - [INFO   ] - server is up on port3004
+2022-02-15T07:23:35.265Z - [ERROR  ] - socket hang up
+2022-02-15T08:31:28.923Z - [INFO   ] - server is up on port3004
+2022-02-15T08:35:08.260Z - [INFO   ] - server is up on port3004
+2022-02-15T08:36:41.399Z - [INFO   ] - server is up on port3004
+2022-02-15T08:38:42.066Z - [ERROR  ] - socket hang up
+2022-02-15T08:38:49.522Z - [INFO   ] - server is up on port3004
+2022-02-15T08:40:58.947Z - [INFO   ] - server is up on port3004
+2022-02-15T08:41:18.614Z - [INFO   ] - server is up on port3004
+2022-02-15T08:41:52.718Z - [INFO   ] - server is up on port3004
+2022-02-15T08:42:53.441Z - [INFO   ] - server is up on port3004
+2022-02-15T08:43:20.419Z - [INFO   ] - server is up on port3004
+2022-02-15T08:45:20.075Z - [ERROR  ] - socket hang up
+2022-02-15T08:46:19.180Z - [INFO   ] - server is up on port3004
+2022-02-15T08:51:00.711Z - [ERROR  ] - socket hang up
+2022-02-15T08:52:29.703Z - [INFO   ] - server is up on port3004
+2022-02-15T08:53:22.673Z - [INFO   ] - server is up on port3004
+2022-02-15T08:55:05.177Z - [INFO   ] - server is up on port3004
+2022-02-15T08:55:37.907Z - [INFO   ] - server is up on port3004
+2022-02-15T08:58:40.875Z - [INFO   ] - server is up on port3004
+2022-02-15T08:58:57.579Z - [INFO   ] - server is up on port3004
+2022-02-15T08:59:44.642Z - [INFO   ] - server is up on port3004
+2022-02-15T09:00:55.378Z - [INFO   ] - server is up on port3004
+2022-02-15T09:02:29.040Z - [INFO   ] - server is up on port3004
+2022-02-15T09:03:46.299Z - [ERROR  ] - socket hang up
+2022-02-15T09:05:52.708Z - [INFO   ] - server is up on port3004
+2022-02-15T09:15:23.361Z - [INFO   ] - server is up on port3004
+2022-02-15T09:17:53.480Z - [INFO   ] - server is up on port3004
+2022-02-15T09:20:36.873Z - [INFO   ] - server is up on port3004
+2022-02-15T09:23:02.898Z - [INFO   ] - server is up on port3004
+2022-02-15T09:23:21.874Z - [ERROR  ] - socket hang up
+2022-02-15T09:23:25.676Z - [INFO   ] - server is up on port3004
+2022-02-15T09:28:22.937Z - [INFO   ] - server is up on port3004
+2022-02-15T09:29:11.111Z - [ERROR  ] - socket hang up
+2022-02-15T09:29:28.413Z - [INFO   ] - server is up on port3004
+2022-02-15T09:30:08.404Z - [ERROR  ] - socket hang up
+2022-02-15T09:32:05.532Z - [INFO   ] - server is up on port3004
+2022-02-15T09:35:54.288Z - [ERROR  ] - socket hang up
+2022-02-15T09:37:07.955Z - [INFO   ] - server is up on port3004
+2022-02-15T09:38:17.052Z - [ERROR  ] - socket hang up
+2022-02-15T09:38:28.195Z - [INFO   ] - server is up on port3004
+2022-02-15T09:39:48.191Z - [INFO   ] - server is up on port3004
+2022-02-15T09:39:58.216Z - [INFO   ] - server is up on port3004
+2022-02-15T09:40:20.147Z - [ERROR  ] - socket hang up
+2022-02-15T09:43:03.354Z - [INFO   ] - server is up on port3004
+2022-02-15T09:43:56.174Z - [ERROR  ] - socket hang up
+2022-02-15T09:44:17.911Z - [INFO   ] - server is up on port3004
+2022-02-15T09:44:39.743Z - [ERROR  ] - socket hang up
+2022-02-15T09:44:48.785Z - [INFO   ] - server is up on port3004
+2022-02-15T09:46:19.311Z - [ERROR  ] - socket hang up
+2022-02-15T09:46:19.340Z - [ERROR  ] - token is not defined
+2022-02-15T09:46:29.711Z - [INFO   ] - server is up on port3004
+2022-02-15T09:48:03.075Z - [ERROR  ] - socket hang up
+2022-02-15T09:48:29.199Z - [INFO   ] - server is up on port3004
+2022-02-15T09:49:18.236Z - [ERROR  ] - socket hang up
+2022-02-15T09:49:27.701Z - [INFO   ] - server is up on port3004
+2022-02-15T09:49:37.893Z - [INFO   ] - server is up on port3004
+2022-02-15T09:49:45.808Z - [ERROR  ] - token is not defined
+2022-02-15T09:51:06.091Z - [INFO   ] - server is up on port3004
+2022-02-15T09:51:10.026Z - [INFO   ] - server is up on port3004
+2022-02-15T09:51:15.900Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T09:55:57.924Z - [INFO   ] - server is up on port3004
+2022-02-15T09:56:04.389Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T09:57:43.960Z - [INFO   ] - server is up on port3004
+2022-02-15T10:04:39.548Z - [INFO   ] - server is up on port3004
+2022-02-15T10:08:04.287Z - [INFO   ] - server is up on port3004
+2022-02-15T10:08:11.412Z - [INFO   ] - server is up on port3004
+2022-02-15T10:10:48.499Z - [ERROR  ] - socket hang up
+2022-02-15T10:11:09.296Z - [INFO   ] - server is up on port3004
+2022-02-15T10:11:38.812Z - [ERROR  ] - socket hang up
+2022-02-15T10:12:00.920Z - [INFO   ] - server is up on port3004
+2022-02-15T10:14:03.416Z - [INFO   ] - server is up on port3004
+2022-02-15T10:15:04.630Z - [ERROR  ] - socket hang up
+2022-02-15T10:15:13.805Z - [INFO   ] - server is up on port3004
+2022-02-15T10:15:27.213Z - [INFO   ] - server is up on port3004
+2022-02-15T10:17:32.024Z - [ERROR  ] - socket hang up
+2022-02-15T10:17:39.697Z - [INFO   ] - server is up on port3004
+2022-02-15T10:18:36.541Z - [ERROR  ] - socket hang up
+2022-02-15T10:18:36.558Z - [ERROR  ] - socket hang up
+2022-02-15T10:18:45.482Z - [INFO   ] - server is up on port3004
+2022-02-15T10:20:33.821Z - [ERROR  ] - socket hang up
+2022-02-15T10:22:03.073Z - [ERROR  ] - socket hang up
+2022-02-15T10:22:13.319Z - [INFO   ] - server is up on port3004
+2022-02-15T10:55:54.920Z - [ERROR  ] - socket hang up
+2022-02-15T10:55:54.939Z - [ERROR  ] - socket hang up
+2022-02-15T10:57:01.408Z - [INFO   ] - server is up on port3004
+2022-02-15T11:15:13.243Z - [ERROR  ] - socket hang up
+2022-02-15T11:16:09.345Z - [INFO   ] - server is up on port3004
+2022-02-15T11:16:36.113Z - [INFO   ] - server is up on port3004
+2022-02-15T11:16:41.019Z - [INFO   ] - server is up on port3004
+2022-02-15T11:16:42.688Z - [INFO   ] - server is up on port3004
+2022-02-15T11:18:07.644Z - [ERROR  ] - socket hang up
+2022-02-15T11:18:12.644Z - [INFO   ] - server is up on port3004
+2022-02-15T11:18:28.928Z - [ERROR  ] - socket hang up
+2022-02-15T11:18:35.803Z - [INFO   ] - server is up on port3004
+2022-02-15T11:19:01.601Z - [INFO   ] - server is up on port3004
+2022-02-15T11:20:07.119Z - [ERROR  ] - socket hang up
+2022-02-15T11:20:13.359Z - [INFO   ] - server is up on port3004
+2022-02-15T11:21:16.709Z - [ERROR  ] - socket hang up
+2022-02-15T11:21:22.664Z - [INFO   ] - server is up on port3004
+2022-02-15T11:21:46.079Z - [ERROR  ] - socket hang up
+2022-02-15T11:26:07.502Z - [ERROR  ] - socket hang up
+2022-02-15T11:26:14.286Z - [INFO   ] - server is up on port3004
+2022-02-15T11:26:24.730Z - [ERROR  ] - socket hang up
+2022-02-15T11:26:59.079Z - [INFO   ] - server is up on port3004
+2022-02-15T11:28:25.383Z - [ERROR  ] - socket hang up
+2022-02-15T11:28:33.606Z - [INFO   ] - server is up on port3004
+2022-02-15T11:29:41.924Z - [INFO   ] - server is up on port3004
+2022-02-15T11:33:35.533Z - [INFO   ] - server is up on port3004
+2022-02-15T11:35:31.391Z - [INFO   ] - server is up on port3004
+2022-02-15T11:36:40.870Z - [INFO   ] - server is up on port3004
+2022-02-15T11:37:00.712Z - [INFO   ] - server is up on port3004
+2022-02-15T11:39:11.014Z - [INFO   ] - server is up on port3004
+2022-02-15T11:47:13.874Z - [ERROR  ] - socket hang up
+2022-02-15T11:47:19.156Z - [INFO   ] - server is up on port3004
+2022-02-15T11:48:06.332Z - [INFO   ] - server is up on port3004
+2022-02-15T11:48:25.496Z - [INFO   ] - server is up on port3004
+2022-02-15T11:48:40.805Z - [INFO   ] - server is up on port3004
+2022-02-15T11:49:17.128Z - [INFO   ] - server is up on port3004
+2022-02-15T11:50:08.250Z - [INFO   ] - server is up on port3004
+2022-02-15T11:50:22.200Z - [INFO   ] - server is up on port3004
+2022-02-15T11:50:52.060Z - [INFO   ] - server is up on port3004
+2022-02-15T11:58:26.841Z - [INFO   ] - server is up on port3004
+2022-02-15T11:58:44.535Z - [INFO   ] - server is up on port3004
+2022-02-15T11:58:47.219Z - [INFO   ] - server is up on port3004
+2022-02-15T11:59:36.993Z - [INFO   ] - server is up on port3004
+2022-02-15T11:59:55.677Z - [INFO   ] - server is up on port3004
+2022-02-15T12:02:15.284Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:04:46.747Z - [INFO   ] - server is up on port3004
+2022-02-15T12:04:50.052Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:06:52.733Z - [INFO   ] - server is up on port3004
+2022-02-15T12:07:16.939Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:08:31.867Z - [INFO   ] - server is up on port3004
+2022-02-15T12:08:35.418Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:11:53.334Z - [INFO   ] - server is up on port3004
+2022-02-15T12:12:02.588Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:15:58.287Z - [INFO   ] - server is up on port3004
+2022-02-15T12:16:02.321Z - [ERROR  ] - socket hang up
+2022-02-15T12:16:09.616Z - [INFO   ] - server is up on port3004
+2022-02-15T12:16:17.369Z - [ERROR  ] - socket hang up
+2022-02-15T12:25:55.646Z - [INFO   ] - server is up on port3004
+2022-02-15T12:26:03.753Z - [INFO   ] - server is up on port3004
+2022-02-15T12:26:09.458Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:27:44.098Z - [INFO   ] - server is up on port3004
+2022-02-15T12:27:47.482Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:28:32.480Z - [INFO   ] - server is up on port3004
+2022-02-15T12:28:34.899Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:31:31.847Z - [INFO   ] - server is up on port3004
+2022-02-15T12:31:33.671Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:31:45.357Z - [INFO   ] - server is up on port3004
+2022-02-15T12:31:46.798Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:32:18.059Z - [INFO   ] - server is up on port3004
+2022-02-15T12:32:20.864Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:32:43.416Z - [INFO   ] - server is up on port3004
+2022-02-15T12:32:53.111Z - [INFO   ] - server is up on port3004
+2022-02-15T12:33:19.879Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:36:15.365Z - [INFO   ] - server is up on port3004
+2022-02-15T12:38:35.783Z - [INFO   ] - server is up on port3004
+2022-02-15T12:41:41.526Z - [INFO   ] - server is up on port3004
+2022-02-15T12:42:04.303Z - [INFO   ] - server is up on port3004
+2022-02-15T12:42:08.605Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-15T12:43:00.061Z - [INFO   ] - server is up on port3004

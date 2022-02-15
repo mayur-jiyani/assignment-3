@@ -5,7 +5,7 @@ const auth = require("../middleware/auth");
 const logger = require("../logger");
 
 router.post("/tracker/messages", auth, (req, res) => {
-  const arr = req.body;
+  const arr = req.body.messages;
 
   arr.forEach(async (item) => {
     const message = new Message({

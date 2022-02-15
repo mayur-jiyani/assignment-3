@@ -1,24 +1,42 @@
 const jwt = require("jsonwebtoken");
 const User = require("../model/users");
 const logger = require("../logger");
+const axios = require("axios");
 
-const auth = async (req, res, next) => {
+const auth = async (req, resp, next) => {
+  // var token, user;
+  var user;
+  var token = req.header("Authorization").replace("Bearer ", "");
   try {
-    const token = req.header("Authorization").replace("Bearer ", "");
-    const decode = jwt.verify(token, process.env.JWT_SECRET);
-    const user = await User.findOne({ _id: decode._id });
+    await axios
+      .post("http://127.0.0.1:3002/authentication/middleware", { token })
+      .then((response) => {
+        if (response.data) {
+          token = response.data.token;
+          user = response.data.user;
+          flag = true;
+        } else {
+          return resp.status(401).send({ error: "Please authenticate" });
+        }
+      })
+      .catch((error) => {
+        logger.error(error);
+        console.log(error);
+        return resp.status(401).send({ error: error });
+        // throw new Error(error);
+      });
 
-    if (!user) {
-      logger.error("user not found");
-      throw new Error();
+    if (flag) {
+      req.token = token;
+      req.user = user;
+    } else {
+      return resp.status(401).send({ error: "Please authenticate" });
     }
 
-    req.token = token;
-    req.user = user;
     next();
   } catch (e) {
-    logger.error("Please authenticate");
-    res.status(401).send({ error: "Please authenticate" });
+    logger.error(e);
+    resp.status(401).send({ error: e });
   }
 };
 

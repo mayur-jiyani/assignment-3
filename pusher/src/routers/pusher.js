@@ -18,7 +18,7 @@ router.post("/pusher/publisher", auth, async (req, res) => {
     var QUEUE = "qweq";
     await channel.assertQueue(QUEUE);
 
-    const arr = req.body;
+    const arr = req.body.messages;
     arr.forEach(async (item) => {
       const msg = {
         message: item.message,

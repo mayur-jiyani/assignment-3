@@ -4,6 +4,7 @@ const router = new express.Router();
 const client = require("../db/redis");
 const auth = require("../middleware/auth");
 const logger = require("../logger");
+const jwt = require("jsonwebtoken");
 
 router.post("/authentication/users", async (req, res) => {
   const user = await new User(req.body);
@@ -54,6 +55,34 @@ router.post("/authentication/users/logout", auth, async (req, res) => {
   } catch (e) {
     logger.error(e.toString());
     return res.status(500).send(e.toString());
+  }
+});
+
+router.post("/authentication/middleware", async (req, res) => {
+  try {
+    // if (req.headers.authorization == null) {
+    //   console.log("1");
+    // }
+    // const token = req.header("Authorization").replace("Bearer ", "");
+    // const token = req.headers["authorization"];
+    // console.log("2");
+    // console.log(req.body.token);
+    const token = req.body.token;
+    const decode = jwt.verify(token, process.env.JWT_SECRET);
+
+    const user = await User.findOne({ _id: decode._id });
+
+    if (!user) {
+      logger.error("user not found");
+      throw new Error();
+    }
+    const myObj = { user, token };
+
+    return res.send(myObj);
+  } catch (e) {
+    const myObj = " ";
+
+    return res.send(myObj);
   }
 });
 

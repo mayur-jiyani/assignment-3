@@ -30,7 +30,7 @@ router.get("/validator/consumer", auth, async (req, res) => {
         const options = {
           method: "POST",
           url: "http://127.0.0.1:3003/tracker/messages",
-          data: [trackerdata],
+          data: { messages: [trackerdata] },
           headers: {
             Authorization: `Bearer ${input.token}`,
             correlation_id: uuidv4(),

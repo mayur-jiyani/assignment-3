@@ -12,3 +12,33 @@
 2022-02-14T10:16:25.208Z - [INFO   ] - server is up on port3003
 2022-02-14T10:17:06.023Z - [INFO   ] - server is up on port3003
 2022-02-14T12:12:50.794Z - [INFO   ] - server is up on port3003
+2022-02-15T03:56:59.948Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.966Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.970Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.977Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.979Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.982Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.984Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.987Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.993Z - [ERROR  ] - Please authenticate
+2022-02-15T03:56:59.997Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.005Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.013Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.019Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.023Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.027Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.031Z - [ERROR  ] - Please authenticate
+2022-02-15T03:57:00.035Z - [ERROR  ] - Please authenticate
+2022-02-15T04:03:34.533Z - [INFO   ] - server is up on port3003
+2022-02-15T04:07:08.616Z - [ERROR  ] - ValidationError: request_id: Path `request_id` is required.
+2022-02-15T04:09:29.853Z - [INFO   ] - server is up on port3003
+2022-02-15T04:14:22.022Z - [INFO   ] - server is up on port3003
+2022-02-15T04:14:31.480Z - [INFO   ] - server is up on port3003
+2022-02-15T04:16:41.255Z - [ERROR  ] - no data with this category and date
+2022-02-15T04:16:48.966Z - [ERROR  ] - no data with this category and date
+2022-02-15T04:16:52.463Z - [ERROR  ] - no data with this category and date
+2022-02-15T04:16:52.909Z - [ERROR  ] - no data with this category and date
+2022-02-15T06:13:13.399Z - [ERROR  ] - ValidationError: request_id: Path `request_id` is required.
+2022-02-15T06:14:28.606Z - [INFO   ] - server is up on port3003
+2022-02-15T08:48:35.897Z - [INFO   ] - server is up on port3003
+2022-02-15T08:48:40.972Z - [INFO   ] - server is up on port3003
