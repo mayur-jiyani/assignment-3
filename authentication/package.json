@@ -12,7 +12,9 @@
   "license": "ISC",
   "devDependencies": {
     "env-cmd": "^10.1.0",
-    "nodemon": "^2.0.15"
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.2.2"
   },
   "dependencies": {
     "bcryptjs": "^2.4.3",
@@ -20,6 +22,8 @@
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.1",
     "redis": "^4.0.3",
+    "swagger-jsdoc": "^6.1.0",
+    "swagger-ui-express": "^4.3.0",
     "winston": "^3.6.0"
   }
 }

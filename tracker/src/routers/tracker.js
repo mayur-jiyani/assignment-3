@@ -26,7 +26,7 @@ router.post("/tracker/messages", auth, (req, res) => {
 });
 
 router.get("/tracker/messages", auth, async (req, res) => {
-  const text = req.body.text;
+  const text = req.query.text;
 
   try {
     const arr = await Message.find({}, { user_message: 1, _id: 0 });
@@ -37,6 +37,7 @@ router.get("/tracker/messages", auth, async (req, res) => {
         result.push(element.user_message);
       }
     });
+    // console.log(text);
 
     return res.status(200).send(result);
   } catch (e) {
@@ -46,7 +47,8 @@ router.get("/tracker/messages", auth, async (req, res) => {
 });
 
 router.get("/tracker/count_messages", auth, async (req, res) => {
-  const updates = Object.keys(req.body);
+  const updates = Object.keys(req.query);
+
   const allowedUpdates = ["category", "created_time"];
   const isValidOperation = updates.every((update) =>
     allowedUpdates.includes(update)
@@ -58,8 +60,8 @@ router.get("/tracker/count_messages", auth, async (req, res) => {
   }
 
   try {
-    const category = req.body.category;
-    const date = req.body.created_time;
+    const category = req.query.category;
+    const date = req.query.created_time;
     const fromDate = new Date(date);
     const toDate = new Date(fromDate.getTime() + 86400000);
     if (!category || !date) {

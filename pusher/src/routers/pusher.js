@@ -9,6 +9,7 @@ router.post("/pusher/publisher", auth, async (req, res) => {
   try {
     //increment thecounter in each request received from user
     const userKey = "user_" + req.user.username;
+
     await client.json.NUMINCRBY(userKey, ".requestCounter", 1);
 
     const amqpServer = "amqp://localhost:5672";

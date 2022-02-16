@@ -1,0 +1,189 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "title": "authentication",
+      "version": "1.0"
+    },
+    "host": "localhost:3002",
+    "schemes": [
+      "http"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "consumes": [
+      "application/json"
+    ],
+    "paths": {
+      "/authentication/users": {
+        "parameters": [],
+        "post": {
+          "summary": "",
+          "operationId": "post-authentication-users",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "schema": {
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "password": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ],
+                "x-examples": {
+                  "example-1": {
+                    "username": "efedfesfe",
+                    "password": "fedsfefedsf"
+                  }
+                }
+              }
+            }
+          ],
+          "responses": {
+            "201": {
+              "description": "Created",
+              "schema": {
+                "type": "object",
+                "properties": {}
+              }
+            }
+          }
+        }
+      },
+      "/authentication/users/login": {
+        "post": {
+          "summary": "/authentication/users/login",
+          "tags": [],
+          "responses": {
+            "200": {
+              "description": "OK",
+              "schema": {
+                "description": "",
+                "type": "object",
+                "properties": {
+                  "redisUser": {
+                    "type": "object",
+                    "properties": {
+                      "id": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "username": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "password": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "requestCounter": {
+                        "type": "number"
+                      }
+                    },
+                    "required": [
+                      "id",
+                      "username",
+                      "password",
+                      "requestCounter"
+                    ]
+                  },
+                  "token": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "required": [
+                  "redisUser",
+                  "token"
+                ],
+                "x-examples": {
+                  "example-1": {
+                    "redisUser": {
+                      "id": "620b28c4407ef8141a3abaad",
+                      "username": "mkmkkd",
+                      "password": "$2a$08$AdYX0rLwtgXGy4GVlNSr6OuzItLKFTrSdc173LnibYE.ouA7vcYbi",
+                      "requestCounter": 7
+                    },
+                    "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MjBiMjhjNDQwN2VmODE0MWEzYWJhYWQiLCJpYXQiOjE2NDUwMDA1OTh9.uyW5W8HOq_pOFKEHxdJJUIUzooTQQK25Az2S0Kh7xLI"
+                  }
+                }
+              }
+            }
+          },
+          "operationId": "post-authentication-users-login",
+          "parameters": [
+            {
+              "in": "body",
+              "name": "body",
+              "schema": {
+                "description": "",
+                "type": "object",
+                "x-examples": {
+                  "example-1": {
+                    "username": "mkmkkd",
+                    "password": "mkmkkd"
+                  }
+                },
+                "properties": {
+                  "username": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "password": {
+                    "type": "string",
+                    "minLength": 1,
+                    "format": "password"
+                  }
+                },
+                "required": [
+                  "username",
+                  "password"
+                ]
+              }
+            }
+          ]
+        }
+      }
+    },
+    "definition": {
+      "users": {
+        "description": "authentication service",
+        "type": "object",
+        "x-examples": {
+          "example-1": {
+            "username": "efedfesfe",
+            "password": "fedsfefedsf"
+          }
+        },
+        "properties": {
+          "username": {
+            "type": "string",
+            "pattern": "/^([a-zA-Z0-9_-]){5,15}$/",
+            "minLength": 5,
+            "maxLength": 15
+          },
+          "password": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "username",
+          "password"
+        ],
+        "title": "users"
+      }
+    },
+    "x-extension-1": null
+  }

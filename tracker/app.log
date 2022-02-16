@@ -42,3 +42,110 @@
 2022-02-15T06:14:28.606Z - [INFO   ] - server is up on port3003
 2022-02-15T08:48:35.897Z - [INFO   ] - server is up on port3003
 2022-02-15T08:48:40.972Z - [INFO   ] - server is up on port3003
+2022-02-16T03:59:15.410Z - [ERROR  ] - Please authenticate
+2022-02-16T04:26:20.193Z - [INFO   ] - server is up on port3003
+2022-02-16T04:26:33.147Z - [INFO   ] - server is up on port3003
+2022-02-16T04:44:20.932Z - [INFO   ] - server is up on port3003
+2022-02-16T04:44:57.256Z - [ERROR  ] - user not found
+2022-02-16T04:44:57.258Z - [ERROR  ] - Please authenticate
+2022-02-16T04:46:06.535Z - [ERROR  ] - user not found
+2022-02-16T04:46:06.537Z - [ERROR  ] - Please authenticate
+2022-02-16T04:46:25.263Z - [ERROR  ] - user not found
+2022-02-16T04:46:25.265Z - [ERROR  ] - Please authenticate
+2022-02-16T04:46:32.068Z - [INFO   ] - server is up on port3003
+2022-02-16T04:46:55.346Z - [ERROR  ] - user not found
+2022-02-16T04:46:55.348Z - [ERROR  ] - Please authenticate
+2022-02-16T04:48:44.700Z - [ERROR  ] - user not found
+2022-02-16T04:48:44.704Z - [ERROR  ] - Please authenticate
+2022-02-16T04:51:13.109Z - [INFO   ] - server is up on port3003
+2022-02-16T05:15:32.183Z - [INFO   ] - server is up on port3003
+2022-02-16T05:17:44.598Z - [INFO   ] - server is up on port3003
+2022-02-16T05:23:29.829Z - [INFO   ] - server is up on port3003
+2022-02-16T05:32:53.905Z - [INFO   ] - server is up on port3003
+2022-02-16T05:41:27.346Z - [ERROR  ] - no data with this category and date
+2022-02-16T05:45:05.259Z - [INFO   ] - server is up on port3003
+2022-02-16T06:02:34.931Z - [INFO   ] - server is up on port3003
+2022-02-16T06:11:24.732Z - [ERROR  ] - no data with this category and date
+2022-02-16T06:11:48.469Z - [ERROR  ] - no data with this category and date
+2022-02-16T06:11:55.896Z - [ERROR  ] - no data with this category and date
+2022-02-16T06:12:03.527Z - [ERROR  ] - no data with this category and date
+2022-02-16T06:14:00.736Z - [INFO   ] - server is up on port3003
+2022-02-16T06:14:25.279Z - [ERROR  ] - Please authenticate
+2022-02-16T10:00:39.660Z - [ERROR  ] - ValidationError: request_id: Path `request_id` is required.
+2022-02-16T10:02:14.311Z - [INFO   ] - server is up on port3003
+2022-02-16T10:02:16.530Z - [ERROR  ] - ValidationError: request_id: Path `request_id` is required.
+2022-02-16T10:02:44.696Z - [INFO   ] - server is up on port3003
+2022-02-16T10:09:04.777Z - [ERROR  ] - Please authenticate
+2022-02-16T10:10:36.904Z - [ERROR  ] - Please authenticate
+2022-02-16T10:26:50.511Z - [WARN   ] - category and date required.
+2022-02-16T10:26:53.541Z - [WARN   ] - category and date required.
+2022-02-16T10:26:54.168Z - [WARN   ] - category and date required.
+2022-02-16T10:26:54.352Z - [WARN   ] - category and date required.
+2022-02-16T10:26:54.535Z - [WARN   ] - category and date required.
+2022-02-16T10:26:54.701Z - [WARN   ] - category and date required.
+2022-02-16T10:26:54.845Z - [WARN   ] - category and date required.
+2022-02-16T10:26:55.217Z - [WARN   ] - category and date required.
+2022-02-16T10:26:55.375Z - [WARN   ] - category and date required.
+2022-02-16T10:26:55.533Z - [WARN   ] - category and date required.
+2022-02-16T10:26:55.876Z - [WARN   ] - category and date required.
+2022-02-16T10:26:56.311Z - [WARN   ] - category and date required.
+2022-02-16T10:26:56.496Z - [WARN   ] - category and date required.
+2022-02-16T10:26:56.661Z - [WARN   ] - category and date required.
+2022-02-16T10:26:56.815Z - [WARN   ] - category and date required.
+2022-02-16T10:27:52.877Z - [WARN   ] - category and date required.
+2022-02-16T10:27:53.016Z - [WARN   ] - category and date required.
+2022-02-16T10:27:53.174Z - [WARN   ] - category and date required.
+2022-02-16T10:28:15.481Z - [WARN   ] - category and date required.
+2022-02-16T10:28:16.151Z - [WARN   ] - category and date required.
+2022-02-16T10:28:16.331Z - [WARN   ] - category and date required.
+2022-02-16T10:28:36.788Z - [ERROR  ] - Please authenticate
+2022-02-16T10:28:40.293Z - [WARN   ] - category and date required.
+2022-02-16T10:28:41.434Z - [WARN   ] - category and date required.
+2022-02-16T10:28:41.603Z - [WARN   ] - category and date required.
+2022-02-16T10:28:41.759Z - [WARN   ] - category and date required.
+2022-02-16T10:28:41.917Z - [WARN   ] - category and date required.
+2022-02-16T10:28:42.262Z - [WARN   ] - category and date required.
+2022-02-16T10:29:20.117Z - [WARN   ] - category and date required.
+2022-02-16T10:29:21.487Z - [WARN   ] - category and date required.
+2022-02-16T10:29:21.685Z - [WARN   ] - category and date required.
+2022-02-16T10:29:21.890Z - [WARN   ] - category and date required.
+2022-02-16T10:29:22.086Z - [WARN   ] - category and date required.
+2022-02-16T10:29:22.271Z - [WARN   ] - category and date required.
+2022-02-16T10:29:25.296Z - [WARN   ] - category and date required.
+2022-02-16T10:29:25.453Z - [WARN   ] - category and date required.
+2022-02-16T10:29:25.614Z - [WARN   ] - category and date required.
+2022-02-16T10:29:25.965Z - [WARN   ] - category and date required.
+2022-02-16T10:29:32.971Z - [WARN   ] - category and date required.
+2022-02-16T10:29:33.125Z - [WARN   ] - category and date required.
+2022-02-16T10:29:33.302Z - [WARN   ] - category and date required.
+2022-02-16T10:29:33.463Z - [WARN   ] - category and date required.
+2022-02-16T10:29:33.624Z - [WARN   ] - category and date required.
+2022-02-16T10:30:47.530Z - [WARN   ] - category and date required.
+2022-02-16T10:36:08.268Z - [INFO   ] - server is up on port3003
+2022-02-16T10:37:02.804Z - [INFO   ] - server is up on port3003
+2022-02-16T10:38:09.865Z - [INFO   ] - server is up on port3003
+2022-02-16T10:57:35.547Z - [INFO   ] - server is up on port3003
+2022-02-16T10:58:09.902Z - [ERROR  ] - Please authenticate
+2022-02-16T10:58:41.336Z - [INFO   ] - server is up on port3003
+2022-02-16T11:01:50.461Z - [INFO   ] - server is up on port3003
+2022-02-16T11:05:29.241Z - [INFO   ] - server is up on port3003
+2022-02-16T11:06:25.700Z - [INFO   ] - server is up on port3003
+2022-02-16T11:08:34.222Z - [INFO   ] - server is up on port3003
+2022-02-16T11:09:45.083Z - [INFO   ] - server is up on port3003
+2022-02-16T11:14:45.751Z - [INFO   ] - server is up on port3003
+2022-02-16T11:15:29.587Z - [INFO   ] - server is up on port3003
+2022-02-16T11:17:00.460Z - [INFO   ] - server is up on port3003
+2022-02-16T11:19:16.666Z - [INFO   ] - server is up on port3003
+2022-02-16T11:19:42.181Z - [ERROR  ] - Please authenticate
+2022-02-16T11:23:41.370Z - [INFO   ] - server is up on port3003
+2022-02-16T11:23:46.037Z - [WARN   ] - category and date required.
+2022-02-16T11:24:24.539Z - [INFO   ] - server is up on port3003
+2022-02-16T11:24:26.675Z - [WARN   ] - category and date required.
+2022-02-16T11:26:32.247Z - [INFO   ] - server is up on port3003
+2022-02-16T11:26:33.892Z - [WARN   ] - category and date required.
+2022-02-16T11:27:03.690Z - [INFO   ] - server is up on port3003
+2022-02-16T11:28:18.252Z - [INFO   ] - server is up on port3003
+2022-02-16T11:28:24.757Z - [INFO   ] - server is up on port3003
+2022-02-16T11:29:02.703Z - [ERROR  ] - Please authenticate
+2022-02-16T11:29:32.527Z - [ERROR  ] - Please authenticate
+2022-02-16T11:41:16.626Z - [INFO   ] - server is up on port3003

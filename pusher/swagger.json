@@ -1,0 +1,105 @@
+{
+    "openapi": "3.0.0",
+    "info": {
+      "title": "pusher",
+      "version": "1.0"
+    },
+    "servers": [
+      {
+        "url": "http://localhost:3004"
+      }
+    ],
+    "paths": {
+      "/pusher/publisher": {
+        "post": {
+          "summary": "Pusher publisher",
+          "tags": [],
+          "responses": {},
+          "operationId": "post-pusher-publisher",
+          "requestBody": {
+            "content": {
+              "application/json": {
+                "schema": {
+                  "description": "",
+                  "type": "object",
+                  "properties": {
+                    "messages": {
+                      "type": "array",
+                      "uniqueItems": true,
+                      "minItems": 1,
+                      "items": {
+                        "required": [
+                          "message"
+                        ],
+                        "properties": {
+                          "message": {
+                            "type": "string",
+                            "minLength": 1
+                          }
+                        }
+                      }
+                    }
+                  },
+                  "required": [
+                    "messages"
+                  ],
+                  "x-examples": {
+                    "example-1": {
+                      "messages": [
+                        {
+                          "message": "ffasfasf"
+                        },
+                        {
+                          "message": "ffasfasf"
+                        }
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "parameters": [
+            {
+              "schema": {
+                "type": "string"
+              },
+              "in": "header",
+              "name": "Authorization"
+            }
+          ]
+        }
+      }
+    },
+    "components": {
+      "schemas": {
+        "users": {
+          "description": "",
+          "type": "object",
+          "x-examples": {
+            "example-1": {
+              "username": "efedfesfe",
+              "password": "fedsfefedsf"
+            }
+          },
+          "properties": {
+            "username": {
+              "type": "string",
+              "pattern": "/^([a-zA-Z0-9_-]){5,15}$/",
+              "maxLength": 15,
+              "minLength": 5
+            },
+            "password": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "required": [
+            "username",
+            "password"
+          ],
+          "title": "users"
+        }
+      }
+    }
+  }

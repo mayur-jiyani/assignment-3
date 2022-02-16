@@ -6,17 +6,24 @@ const axios = require("axios");
 const auth = async (req, resp, next) => {
   // var token, user;
   var user;
+  var flag = true;
+
   var token = req.header("Authorization").replace("Bearer ", "");
+
   try {
     await axios
       .post("http://127.0.0.1:3002/authentication/middleware", { token })
       .then((response) => {
-        if (response.data) {
+        console.log("1");
+        if (response.data != " ") {
+          console.log(response.data);
           token = response.data.token;
           user = response.data.user;
-          flag = true;
+          req.token = token;
+          req.user = user;
+          flag = false;
         } else {
-          return resp.status(401).send({ error: "Please authenticate" });
+          return;
         }
       })
       .catch((error) => {
@@ -25,19 +32,15 @@ const auth = async (req, resp, next) => {
         return resp.status(401).send({ error: error });
         // throw new Error(error);
       });
-
-    if (flag) {
-      req.token = token;
-      req.user = user;
-    } else {
-      return resp.status(401).send({ error: "Please authenticate" });
-    }
-
-    next();
   } catch (e) {
     logger.error(e);
     resp.status(401).send({ error: e });
   }
+
+  if (flag) {
+    return resp.status(401).send({ error: "Please authenticate" });
+  }
+  next();
 };
 
 module.exports = auth;

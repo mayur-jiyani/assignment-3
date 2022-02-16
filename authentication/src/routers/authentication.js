@@ -42,6 +42,7 @@ router.post("/authentication/users/login", async (req, res) => {
     );
 
     const token = await user.generatAuthToken();
+    // console.log(token);
     return res.status(200).send({ redisUser, token });
   } catch (e) {
     logger.error(e.toString());

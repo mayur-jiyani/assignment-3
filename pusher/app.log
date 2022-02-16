@@ -278,3 +278,102 @@
 2022-02-15T12:42:04.303Z - [INFO   ] - server is up on port3004
 2022-02-15T12:42:08.605Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
 2022-02-15T12:43:00.061Z - [INFO   ] - server is up on port3004
+2022-02-16T03:58:54.130Z - [INFO   ] - server is up on port3004
+2022-02-16T03:59:19.179Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:03:05.062Z - [INFO   ] - server is up on port3004
+2022-02-16T04:03:15.239Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:04:22.466Z - [INFO   ] - server is up on port3004
+2022-02-16T04:04:23.465Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:04:33.923Z - [INFO   ] - server is up on port3004
+2022-02-16T04:05:45.893Z - [INFO   ] - server is up on port3004
+2022-02-16T04:05:52.348Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:06:14.936Z - [INFO   ] - server is up on port3004
+2022-02-16T04:06:17.007Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:06:48.199Z - [INFO   ] - server is up on port3004
+2022-02-16T04:06:49.509Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T04:06:57.621Z - [INFO   ] - server is up on port3004
+2022-02-16T04:07:12.342Z - [INFO   ] - server is up on port3004
+2022-02-16T04:07:13.203Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:07:27.127Z - [INFO   ] - server is up on port3004
+2022-02-16T04:07:30.490Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:07:44.261Z - [INFO   ] - server is up on port3004
+2022-02-16T04:09:45.560Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:10:42.220Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:12:39.231Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:15:57.478Z - [INFO   ] - server is up on port3004
+2022-02-16T04:28:39.894Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:28:49.958Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T04:44:27.310Z - [INFO   ] - server is up on port3004
+2022-02-16T05:16:31.169Z - [INFO   ] - server is up on port3004
+2022-02-16T05:16:52.157Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:17:16.025Z - [INFO   ] - server is up on port3004
+2022-02-16T05:17:54.384Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:18:16.951Z - [INFO   ] - server is up on port3004
+2022-02-16T05:18:57.704Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:20:31.574Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:20:46.390Z - [INFO   ] - server is up on port3004
+2022-02-16T05:22:25.718Z - [INFO   ] - server is up on port3004
+2022-02-16T05:22:42.124Z - [INFO   ] - server is up on port3004
+2022-02-16T05:22:45.354Z - [INFO   ] - server is up on port3004
+2022-02-16T05:22:49.408Z - [INFO   ] - server is up on port3004
+2022-02-16T05:23:04.445Z - [INFO   ] - server is up on port3004
+2022-02-16T05:23:06.930Z - [INFO   ] - server is up on port3004
+2022-02-16T05:23:36.585Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:24:33.782Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:26:52.005Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:27:38.430Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:28:53.916Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:29:28.837Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:30:19.579Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:30:27.261Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:30:33.693Z - [INFO   ] - server is up on port3004
+2022-02-16T05:45:24.062Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:45:55.577Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:50:15.105Z - [INFO   ] - server is up on port3004
+2022-02-16T05:50:34.045Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:50:53.422Z - [INFO   ] - server is up on port3004
+2022-02-16T05:50:54.102Z - [ERROR  ] - Cannot set headers after they are sent to the client
+2022-02-16T05:51:22.832Z - [INFO   ] - server is up on port3004
+2022-02-16T05:52:25.878Z - [INFO   ] - server is up on port3004
+2022-02-16T05:53:16.532Z - [INFO   ] - server is up on port3004
+2022-02-16T05:53:30.378Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:54:12.779Z - [INFO   ] - server is up on port3004
+2022-02-16T05:54:17.593Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:56:48.682Z - [INFO   ] - server is up on port3004
+2022-02-16T05:56:56.373Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:58:00.607Z - [INFO   ] - server is up on port3004
+2022-02-16T05:58:01.847Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:58:23.062Z - [INFO   ] - server is up on port3004
+2022-02-16T05:58:24.059Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:59:08.416Z - [INFO   ] - server is up on port3004
+2022-02-16T05:59:09.350Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:59:36.042Z - [INFO   ] - server is up on port3004
+2022-02-16T05:59:36.686Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T05:59:53.046Z - [INFO   ] - server is up on port3004
+2022-02-16T05:59:53.393Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T06:00:08.060Z - [INFO   ] - server is up on port3004
+2022-02-16T06:00:08.810Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T06:00:39.379Z - [INFO   ] - server is up on port3004
+2022-02-16T06:00:47.072Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T06:02:12.325Z - [INFO   ] - server is up on port3004
+2022-02-16T06:02:14.403Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T06:02:40.543Z - [INFO   ] - server is up on port3004
+2022-02-16T06:02:41.256Z - [ERROR  ] - TypeError: Cannot read properties of undefined (reading 'username')
+2022-02-16T06:03:06.230Z - [INFO   ] - server is up on port3004
+2022-02-16T06:04:29.980Z - [INFO   ] - server is up on port3004
+2022-02-16T06:05:30.628Z - [INFO   ] - server is up on port3004
+2022-02-16T06:11:15.152Z - [INFO   ] - server is up on port3004
+2022-02-16T09:33:10.428Z - [INFO   ] - server is up on port3004
+2022-02-16T11:11:30.242Z - [INFO   ] - server is up on port3004
+2022-02-16T11:35:29.362Z - [INFO   ] - server is up on port3004
+2022-02-16T11:35:32.765Z - [INFO   ] - server is up on port3004
+2022-02-16T11:37:06.769Z - [INFO   ] - server is up on port3004
+2022-02-16T11:37:50.243Z - [INFO   ] - server is up on port3004
+2022-02-16T11:38:48.363Z - [INFO   ] - server is up on port3004
+2022-02-16T11:41:09.302Z - [INFO   ] - server is up on port3004
+2022-02-16T11:47:59.049Z - [INFO   ] - server is up on port3004
+2022-02-16T11:59:50.511Z - [INFO   ] - server is up on port3004
+2022-02-16T12:00:53.462Z - [INFO   ] - server is up on port3004
+2022-02-16T12:01:10.491Z - [INFO   ] - server is up on port3004
+2022-02-16T12:01:28.379Z - [INFO   ] - server is up on port3004
+2022-02-16T12:02:39.311Z - [INFO   ] - server is up on port3004
