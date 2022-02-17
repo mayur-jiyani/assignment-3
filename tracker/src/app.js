@@ -9,6 +9,7 @@ const swagger = require("../swagger.json");
 
 const app = express();
 
+//for swagger ui
 // const specs = swaggerJsDoc(swagger);
 app.use("/tracker/api-docs", swaggerUI.serve, swaggerUI.setup(swagger));
 

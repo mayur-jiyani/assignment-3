@@ -149,3 +149,22 @@
 2022-02-16T11:29:02.703Z - [ERROR  ] - Please authenticate
 2022-02-16T11:29:32.527Z - [ERROR  ] - Please authenticate
 2022-02-16T11:41:16.626Z - [INFO   ] - server is up on port3003
+2022-02-16T12:26:41.177Z - [ERROR  ] - ValidationError: request_id: Path `request_id` is required.
+2022-02-16T12:27:08.567Z - [INFO   ] - server is up on port3003
+2022-02-17T03:53:36.877Z - [INFO   ] - server is up on port3003
+2022-02-17T03:59:20.766Z - [INFO   ] - server is up on port3003
+2022-02-17T03:59:23.923Z - [INFO   ] - server is up on port3003
+2022-02-17T04:09:49.011Z - [ERROR  ] - Please authenticate
+2022-02-17T04:11:33.280Z - [INFO   ] - server is up on port3003
+2022-02-17T04:11:39.336Z - [ERROR  ] - Please authenticate
+2022-02-17T04:11:56.221Z - [ERROR  ] - Please authenticate
+2022-02-17T04:13:54.505Z - [INFO   ] - server is up on port3003
+2022-02-17T04:14:11.197Z - [ERROR  ] - Please authenticate
+2022-02-17T04:20:43.856Z - [INFO   ] - server is up on port3003
+2022-02-17T04:22:17.708Z - [INFO   ] - server is up on port3003
+2022-02-17T04:22:36.848Z - [ERROR  ] - Please authenticate
+2022-02-17T04:22:41.228Z - [ERROR  ] - Please authenticate
+2022-02-17T04:22:55.489Z - [INFO   ] - server is up on port3003
+2022-02-17T11:56:28.259Z - [ERROR  ] - Please authenticate
+2022-02-17T11:56:29.359Z - [ERROR  ] - Please authenticate
+2022-02-17T11:56:29.595Z - [ERROR  ] - Please authenticate
